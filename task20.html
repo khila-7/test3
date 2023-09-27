@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 20</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        button{
+            padding: 10px;
+        }
+        label{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sorting a string</h1>
+    <label>Enter the String:</label>
+    <input type="text" id="input" placeholder="Enter the Number" name="num"><br><br>
+    <button onclick="sortstring()">Sort String</button><br><br>
+    <label>Expected Output:</label>
+    <input type="text" id="output" name="output"><br><br>
+    <script>
+        function sortstring(){
+            var p = document.getElementById("input");
+            var q = p.value;
+            var r = q.split("").sort().join("");
+            var s = document.getElementById("output");
+            s.value = r;
+            }
+        </script>
+</body>
+</html>
